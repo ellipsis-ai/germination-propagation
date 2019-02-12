@@ -1,0 +1,31 @@
+[ {
+  "exportId" : "RNUsyIWRS-aaGzLm1TnPnQ",
+  "name" : "trialId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the trial ID?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "_9_rIN7RSiG_2eIGsO9XWA",
+  "name" : "treatmentId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the treatment ID?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "h_jQIkMTR72tTgfL0OLgfQ",
+  "name" : "chamberPosition",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the germ chamber position?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+} ]

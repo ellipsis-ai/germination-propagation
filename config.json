@@ -1,0 +1,8 @@
+{
+  "name" : "Germination propagation transitions",
+  "exportId" : "Mlx44Z_kT8O-dGk9gKT06w",
+  "icon" : "🍃",
+  "requiredAWSConfigs" : [ ],
+  "requiredOAuthApiConfigs" : [ ],
+  "requiredSimpleTokenApis" : [ ]
+}
