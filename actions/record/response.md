@@ -1,1 +1,1 @@
-{successResult}
+OK, I've notified <#{successResult}> and set a reminder there for 24 hours from now.

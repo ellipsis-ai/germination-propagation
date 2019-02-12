@@ -7,6 +7,7 @@ const now = moment().tz(ellipsis.team.timeZone);
 const reminderTime = now.add(1, 'day');
 const reminderTimeString = `tomorrow at ${reminderTime.format("hh:mm:ss a")}`;
 const format = "YYYY-MM-DD hh:mm:ss a";
+const channel = ellipsis.env.GERMINATION_PROPAGATION_NOTIFICATION_CHANNEL; 
 const output = `
 :seedling: A new germination has been recorded by ${ellipsis.event.user.formattedLink}
 
@@ -14,15 +15,15 @@ const output = `
 **Treatment ID:** \`${treatmentId}\`
 **Germination chamber position:** \`${chamberPosition}\`
 **When:** \`${now.format(format)}\`
-**Reminder:** \`${reminderTimeString}\`
+**Reminder:** \`${reminderTimeString}\` in <#${channel}>
 `;
 
 api.schedule({
   actionName: 'remind',
   recurrence: `tomorrow at ${reminderTimeString}`,
-  channel: ellipsis.env.GERMINATION_PROPAGATION_NOTIFICATION_CHANNEL
+  channel: channel
 }).then(() => api.say({
   message: output,
-  channel: ellipsis.env.GERMINATION_PROPAGATION_NOTIFICATION_CHANNEL
-})).then(ellipsis.noResponse);
+  channel: channel
+})).then(() => ellipsis.success(channel));
 }
